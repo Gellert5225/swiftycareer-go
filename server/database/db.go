@@ -24,12 +24,6 @@ func ConnectToMongo() {
 		panic(err)
 	}
 
-	defer func() {
-		if err = Client.Disconnect(ctx); err != nil {
-			panic(err)
-		}
-	}()
-
 	if err := Client.Ping(ctx, readpref.Primary()); err != nil {
 		panic(err)
 	}
