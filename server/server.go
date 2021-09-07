@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	route "swiftycareer-go/controller"
+	"swiftycareer-go/route"
 )
 
 func CreateServer() {
